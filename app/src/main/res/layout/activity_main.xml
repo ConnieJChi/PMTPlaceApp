@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height= "match_parent"
+    tools:context="com.example.conni.pmtplaceapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="QQQ Boba"
+        android:textSize="30dp"
+        android:id="@+id/QQQBoba"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/bobahero"
+        android:layout_below="@id/QQQBoba"
+        android:id="@+id/bobaimage"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bobaimage"
+        android:layout_centerInParent="true"
+        android:text="Welcome!"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_centerInParent="true"
+        android:text="This is QQQ Boba, please come and visit us in Berkeley!"
+        android:textSize="15dp"
+        android:id="@+id/intro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bobasticker"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/welcome"
+        android:layout_alignStart="@+id/welcome"
+        android:layout_below="@+id/intro"
+
+        android:src="@drawable/bobasticker" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/bobasticker"
+        android:layout_below="@id/intro"
+        android:layout_centerInParent="true"
+        android:text="2199 Bancroft Way
+Berkeley, CA 94704"
+        android:textSize="15dp"
+        android:id="@+id/location"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bobasticker"
+        android:layout_below="@id/intro"
+        android:layout_centerInParent="true"
+        android:text="Everything priced $5!"
+        android:textSize="15dp"
+        android:id="@+id/pricing"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
